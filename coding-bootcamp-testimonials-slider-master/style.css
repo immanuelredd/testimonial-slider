@@ -37,6 +37,10 @@ p {
     padding: 10em 12em 5em 12em;
 }
 
+.testimonial {
+    margin-bottom: 3em;
+}
+
 .slider-container {
     display: flex;
     align-items: center;
@@ -64,7 +68,11 @@ p {
     font-size: 2.2em;
 }
 
-.img-1 {
+.images {
+    position: relative;
+}
+
+.image {
     position: relative;
     right: 7em;
 }
@@ -73,8 +81,8 @@ p {
     position: absolute;
     z-index: -1;
     top: 0;
-    right: 11em;
-    transform: translateY(10%);
+    right: -1em;
+    transform: translateY(-10%);
 }
 
 span {
@@ -86,19 +94,20 @@ span {
     background-color: var(--greyish-blue);
     box-shadow: 2px 2px 2px #eeb;
     color: var(--dark-blue);
-    padding: 3em 2em 2em;
-    border: none;
-    position: relative;
+    padding: 2em 2em 2em;
+    position: absolute;
+    top: 80%;
     left: 55%;
+    border: none;
     z-index: 30;
     cursor: pointer;
 }
 
 .slider-prev {
     border-radius: 2rem 0 0 2rem;
-
 }
 
 .slider-next {
     border-radius: 0 2rem 2rem 0;
+    left: 58%;
 }
