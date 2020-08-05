@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: hsl(240, 38%, 20%);
+    --greyish-blue: hsl(240, 18%, 77%);
+}
+
+
+
+body {
+    font-family: 'Inter',
+        sans-serif;
+    Font-size: 10px;
+}
+
+p {
+    color: var(--dark-blue);
+    font-size: 3.2em;
+}
+
+.container {
+    padding: 10em 12em 5em 12em;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content {
+    position: relative;
+    z-index: 20;
+}
+
+.content .pattern-quotes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(90%, -50%);
+}
+
+.p-one {
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.p-two {
+    font-size: 2.2em;
+}
+
+.img-1 {
+    position: relative;
+    right: 7em;
+}
+
+.img-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 11em;
+    transform: translateY(10%);
+}
+
+span {
+    color: var(--greyish-blue);
+}
+
+.slider-prev,
+.slider-next {
+    background-color: var(--greyish-blue);
+    box-shadow: 2px 2px 2px #eeb;
+    color: var(--dark-blue);
+    padding: 3em 2em 2em;
+    border: none;
+    position: relative;
+    left: 55%;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.slider-prev {
+    border-radius: 2rem 0 0 2rem;
+
+}
+
+.slider-next {
+    border-radius: 0 2rem 2rem 0;
+}

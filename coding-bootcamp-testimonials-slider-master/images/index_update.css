@@ -1,0 +1,40 @@
+.container-1{
+    display: flex;
+}
+.container-1{
+    padding: 10px;
+}
+.container-1-box{
+    order: 1;
+}
+.container-1-box2{
+    position: relative;
+    z-index: 1;
+    order: 1;
+}
+#img1 {
+    position: relative;
+    left: 30%;
+    width: 30%;
+    height: 30%;
+    z-index: -1;
+}
+#img2{
+    position: absolute;
+    right: 55%;
+    top: 9.5%;
+    width: 28%;
+    height: 20%;
+}
+p{ 
+   font-family: 'Inter', sans-serif;
+   Font-size: 22px;
+   text-align: left;
+}
+#subpone{
+    font-size: 18px;
+    font-weight: 900;
+}
+span{
+    color: silver;
+}
