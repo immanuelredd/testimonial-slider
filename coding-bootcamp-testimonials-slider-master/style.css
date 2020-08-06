@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
 
 * {
     padding: 0;
@@ -26,6 +18,7 @@ body {
     font-family: 'Inter',
         sans-serif;
     Font-size: 10px;
+    height: auto;
 }
 
 p {
@@ -44,7 +37,9 @@ p {
 .slider-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
 }
 
 .content {
@@ -77,37 +72,182 @@ p {
     right: 7em;
 }
 
+.img-1 {
+    height: 420px;
+    width: 450px;
+}
+
 .img-bg {
     position: absolute;
     z-index: -1;
     top: 0;
     right: -1em;
     transform: translateY(-10%);
+    height: 510px;
+    width: 600px;
 }
 
 span {
     color: var(--greyish-blue);
 }
 
-.slider-prev,
-.slider-next {
-    background-color: var(--greyish-blue);
+.br {
+    display: none;
+}
+
+.nav {
+    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 2px #eeb;
     color: var(--dark-blue);
-    padding: 2em 2em 2em;
+    padding: 1em;
     position: absolute;
     top: 80%;
-    left: 55%;
+    left: 58%;
+    border-radius: 2rem;
     border: none;
     z-index: 30;
     cursor: pointer;
+    padding: 1rem;
 }
 
 .slider-prev {
-    border-radius: 2rem 0 0 2rem;
+    padding-right: 1.5em;
 }
 
 .slider-next {
-    border-radius: 0 2rem 2rem 0;
-    left: 58%;
+    padding-left: 1.5em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 7em 6em 0.5em 4em;
+    }
+
+    .nav {
+        top: 88%;
+        left: 50%;
+        padding: 1em;
+    }
+
+    .slider-prev {
+        padding-right: 1.8em;
+    }
+
+    .slider-next {
+        padding-left: 1.8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 7em 4em 0.5em 4em;
+    }
+
+    .slider-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        order: 2;
+        margin-top: 10em;
+    }
+
+    .images {
+        position: relative;
+        left: 3em;
+    }
+
+    .image {
+        width: 100%;
+        margin: auto;
+    }
+
+    .content .pattern-quotes {
+        left: 0;
+        transform: translate(200%, -30%);
+    }
+
+    p {
+        text-align: center;
+        font-size: 3.0em;
+    }
+
+    .br {
+        display: block;
+    }
+
+    .nav {
+        left: 38%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: auto;
+        padding: 10em 1em 5em;
+    }
+
+    .nav {
+        top: 95%;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 5em 1em 2em;
+    }
+
+    p {
+        font-size: 2.0em;
+    }
+
+    .content {
+        margin-top: 10em;
+    }
+
+    .content .pattern-quotes {
+        left: 0;
+        transform: translate(80%, -30%);
+    }
+
+    .slider-container {
+        width: 300px;
+    }
+
+    .image {
+        position: relative;
+        right: 4em;
+    }
+
+    .images .img-1 {
+        height: 290px;
+        width: 280px;
+    }
+
+    .images .img-bg {
+        height: 350px;
+        width: 320px;
+        right: 0.5em;
+    }
+
+    .nav {
+        top: 60%;
+
+    }
+
 }
